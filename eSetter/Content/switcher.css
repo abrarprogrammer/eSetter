@@ -1,0 +1,63 @@
+/*
+ * eLite - Landing Page
+ * Version: 1.0
+ * Copyright 2013
+ * Created by: DamterThemes
+ * URL: https://wrapbootstrap.com/user/damterthemes
+ * Designed and built based on Twitter Bootstrap 3. 
+*/
+
+/* Styles Switcher */
+
+#style-switcher h3 { color: #fff; font-size: 12px; margin: 5px 0 -3px 3px; }
+#style-switcher { background: #222; width: 195px; position: fixed; top: 117px; z-index: 9999; left: 0px; border-radius: 0 0 3px 0; }
+#style-switcher div { padding: 5px 10px; }
+#style-switcher h2 { background: #333; color: #FFFFFF; font-weight: bold; padding: 0; font-size: 14px; padding: 6px 0 5px 10px; }
+#style-switcher h2 a { background: url("switcher.png") no-repeat scroll left center transparent; display: block; height: 41px; position: absolute; right: -39px; text-indent: -9999px; top: 0; width: 39px; border-radius: 0 3px 3px 0; }
+.colors { list-style: none; margin: 10px 0px 10px 0px; overflow: hidden; padding-left: 0px; }
+.colors li { float: left; margin: 2px; }
+.colors li a { display: block; width: 15px; height: 15px; cursor: pointer; }
+.layout-style select { width: 100%; padding: 5px; margin-top: 5px !important; font-size:12px; border: none; margin: 0 0 0 -5px; color: #666; cursor: pointer; }
+.layout-style ul li { margin-top:10px !important; }
+#reset { margin: 0 0 15px 2px; }
+#reset a { color: #fff; font-size: 12px; }
+.green, .green-bg { background: #72b626; }
+.blue, .blue-bg { background: #2db2ea; }
+.orange, .orange-bg { background: #fa5b0f; }
+.navy, .navy-bg { background: #495d7f; }
+.yellow, .yellow-bg { background: #f4f400; }
+.peach, .peach-bg { background : #f4c4b6; }
+.red, .red-bg { background: #c62020; }
+.beige, .beige-bg { background: #bfa980; }
+.pink, .pink-bg { background: #c71c77; }
+.cyan, .cyan-bg { background: #37b6bd; }
+.celadon, .celadon-bg { background: #74aea1; }
+.brown, .brown-bg { background: #784e3d; }
+.cherry, .cherry-bg { background: #911938; }
+.gray, .gray-bg { background: #666666; }
+.purple, .purple-bg { background: #6957af; }
+.olive, .olive-bg { background: #b3c211; }
+.dark, .dark-bg { background: #313131; }
+.dirty-green, .dirty-green-bg { background: #3b6e40; }
+.bg1 { background-image: url("bg/bg1.png"); }
+.bg2 { background-image: url("bg/bg2.png"); }
+.bg3 { background-image: url("bg/bg3.png"); }
+.bg4 { background-image: url("bg/bg4.png"); }
+.bg5 { background-image: url("bg/bg5.png"); }
+.bg6 { background-image: url("bg/bg6.png"); }
+.bg7 { background-image: url("bg/bg7.png"); }
+.bg8 { background-image: url("bg/bg8.png"); }
+.bg9 { background-image: url("bg/bg9.png"); }
+.bg10 { background-image: url("bg/bg10.png"); }
+.bg11 { background-image: url("bg/bg11.png"); }
+.bg12 { background-image: url("bg/bg12.png"); }
+.bg13 { background-image: url("bg/bg13.png"); }
+.bg14 { background-image: url("bg/bg14.png"); }
+.bg15 { background-image: url("bg/bg15.png"); }
+.bg16 { background-image: url("bg/bg16.png"); }
+.bg17 { background-image: url("bg/bg17.png"); }
+.bg18 { background-image: url("bg/bg18.png"); }
+.colors li a.active { box-shadow: 0 0 0 2px #404040 inset }
+ @media only screen and (max-width: 1029px) {
+#style-switcher { display: none; }
+}

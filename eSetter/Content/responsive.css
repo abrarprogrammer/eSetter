@@ -1,0 +1,51 @@
+/*
+ * eLite - Landing Page
+ * Version: 1.0
+ * Copyright 2013
+ * Created by: DamterThemes
+ * URL: https://wrapbootstrap.com/user/damterthemes
+ * Designed and built based on Twitter Bootstrap 3. 
+*/
+
+/*
+**********************************************
+Landscape Phone To Portrait Tablet
+**********************************************
+*/
+@media screen and (max-width: 600px) {
+.social-icon { text-align:center; }
+.copyright-text p { text-align: center; }
+.logo{text-align:center}
+}
+@media screen and (max-width: 533px) {
+.social-icon { text-align:center; }
+.copyright-text p { text-align: center; }
+}
+/*
+**********************************************
+Landscape phones and down
+**********************************************
+*/
+@media screen and (max-width: 480px) {
+.social-icon { text-align:center; }
+.copyright-text p { text-align: center; }
+}
+
+@media screen and (max-width: 320px) {
+.logo h1 { font-size: 1.5em; padding: 20px 0 0 0; }
+.phone h2 { width:90px; font-size: 1em; padding: 25px 5px 5px 5px; }
+#call-to-action h1 { padding: 20px 0 10px 0; font-size: 1.5em; }
+.form-subscribe h4 { font-size: 1.3em; }
+}
+
+@media screen and (max-width: 240px) {
+.logo h1 { font-size: 1.5em; padding: 20px 0 0 0; }
+.phone h2 { width:90px; font-size: 1em; padding: 25px 5px 5px 5px; }
+#call-to-action h1 { padding: 20px 0 10px 0; font-size: 1.5em; }
+.form-subscribe h4 { font-size: 1.3em; }
+#testimonials { font-size: 1.2em; } 
+.media-carousel img { height:47px;  }
+.social-icon { text-align:center; }
+.social-icon ul li { margin-bottom:5px; }
+.copyright-text p { text-align: center; font-size:0.8em; }
+}

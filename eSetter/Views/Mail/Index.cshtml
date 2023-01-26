@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Client</title>
+    <meta name="description" content="Email client" />
+    <meta name="keywords" content="email, e-setter.mk" />
+    <meta name="author" content="E-setter" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="~/Content/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/component.css" />
+    <script src="~/Scripts/modernizr.custom.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li class="gn-search-item">
+                                <input placeholder="Search" type="search" class="gn-search">
+                                <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                            </li>
+                            <li>
+                                <a class="gn-icon glyphicon-envelope">Inbox</a>
+                            </li>
+                            <li><a class="gn-icon glyphicon-send">Sent</a></li>
+                        </ul>
+                    </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li><a class="codrops-icon"><span>New Mail</span></a></li>
+            <li><a class="codrops-icon" href="@Url.Action("signOut")"><span>Sign Out</span></a></li>
+            <li><a class="codrops-icon"><span>You're signed in as</span></a></li>
+        </ul>
+        <header>
+
+            <form action="" method="post">
+                <textarea name="content" id="editor">
+            Ace
+        </textarea>
+                <p><input type="submit" value="Submit"></p>
+            </form>
+
+        </header>
+    </div><!-- /container -->
+    <script src="~/Scripts/ckeditor.js"></script>
+    <script src="~/Scripts/classie.js"></script>
+    <script src="~/Scripts/gnmenu.js"></script>
+    <script>
+    ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .catch( error => {
+    console.error( error );
+    } );
+    </script>
+    <script>new gnMenu(document.getElementById('gn-menu'));</script>
+</body>
+</html>

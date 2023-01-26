@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "privacy";
+
+    <style>
+        br{
+            display: block;
+    content: "";
+    margin-top: 10px;
+        }
+        h2 {
+            font-weight: bold;
+        }
+    </style>
+}
+
+<div class="container" id="main_container">
+    <!-- header -->
+    @Html.Partial("_header")
+    <section id="settingsSec">
+        <div class="container">
+            <div class="row clearfix">
+                <div id="settings">
+                    <h2>Сетирање на меил акаунтот на вашиот мобилен телефон</h2>
+                    <hr />
+                    <div>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2" style="position:relative;bottom:-15px">
+                                <span class="bolded">
+                                    Изберете префикс:
+                                </span>
+                            </div>
+                            <div class="col-xs-8 col-sm-3 col-md-2 col-lg-2">
+                                <div class="form-group">
+                                    <select class="form-control" id="prefix">
+                                        <option value="070">070</option>
+                                        <option value="071">071</option>
+                                        <option value="072">072</option>
+                                        <option value="073">073</option>
+                                        <option value="074">074</option>
+                                        <option value="075">075</option>
+                                        <option value="076">076</option>
+                                        <option value="077">077</option>
+                                        <option value="078">078</option>
+                                        <option value="079">079</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="bolded">
+                            Електронска адреса:
+                        </span> {вашиот мобилен број}.<span class="prfx">070</span>.mk (пр.123456@@<span class="prfx">070</span>.mk)
+                        <br />
+                        <span class="bolded">
+                            Корисничко име:
+                        </span> {вашиот мобилен број}.<span class="prfx">070</span>.mk (пр.123456@@<span class="prfx">070</span>.mk)
+                        <br />
+                        <span class="bolded">
+                            Лозинка:
+                        </span> Креираната лозинка за најава
+                        <br />
+                        <span class="bolded">
+                            Дојдовен меил (POP3) сервер:
+                        </span> mail.<span class="prfx">070</span>.mk
+                        <br />
+                        <span class="bolded">
+                            Порта:
+                        </span> 995
+                        <br />
+                        <span class="bolded">
+                            Појдовен меил (SMTP) сервер:
+                        </span> mail.<span class="prfx">070</span>.mk
+                        <br />
+                        <span class="bolded">
+                            Порта:
+                        </span> 465
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @Html.Partial("_footer")
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#prefix").change(function () {
+                $("span.prfx").html($(this).val());
+
+            })
+        })
+        </script>
+    }

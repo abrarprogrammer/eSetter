@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уникатна електронска адреса идентична како вашиот мобилен број. Достапна за претплатниците на операторите Македонски Телеком и A1.">
+    <meta name="author" content="eSetter">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" href="~/Images/favicon.png" />
+    <title>e-Setter | Бидете уникатни со електронска адреса иста како вашиот мобилен број</title>
+    @Styles.Render("~/Content/reset")
+    @Styles.Render("~/Content/lightbox")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/bootstrap.css" type="text/css" />
+</head>
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/all")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/lightbox")
+    @RenderSection("Scripts", required: false)
+    <div class="cookie-consent-banner">
+        <div class="cookie-consent-banner__inner">
+            <div class="cookie-consent-banner__copy">
+                <div class="cookie-consent-banner__header">THIS WEBSITE USES COOKIES</div>
+                <div class="cookie-consent-banner__description">We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.</div>
+            </div>
+
+            <div class="cookie-consent-banner__actions">
+                <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--primary btn btn-custom">
+                    Прифати
+                </a>
+
+                <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary btn btn-sec">
+                    Прилагоди
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var options = {
+            cookieTypes: [
+                {
+                    type: 'Преференции на страницата',
+                    value: 'preferences',
+                    description: 'Колачиња кои се поврзани со преференциите на сајтот, на пример, запомнување на твоето корисничко име, бои на сајтот итн.'
+                },
+                {
+                    type: 'Аналитика',
+                    value: 'analytics',
+                    description: 'Колачиња поврзани со посетите на сајтот, типови на прелистувачи итн.'
+                },
+                {
+                    type: 'Маркетинг',
+                    value: 'marketing',
+                    description: 'Колачиња поврзани со маркетинг, на пример. новости, социјални медиуми и слично.'
+                }
+            ],
+            title: 'Прифати колачиња и политика на приватност?',
+            message: 'Овој сајт користи колачиња. Доколку сакате да ги прифатите колачињата, изберете го копчето <strong>прифати</strong>',
+            delay: 600,
+            expires: 1,
+            link: '@Url.Action("privacyProtection")',
+            onAccept: function () {
+                var myPreferences = $.fn.ihavecookies.cookie();
+            },
+            uncheckBoxes: true,
+            acceptBtnLabel: 'Прифати',
+            advancedBtnLabel: 'Прилагоди',
+            moreInfoLabel: 'Повеќе',
+            cookieTypesTitle: 'Избери кои колачиња сакаш да ги прифатиш',
+            fixedCookieTypeLabel: 'Суштински',
+            fixedCookieTypeDesc: 'Овие се суштински за да функционира сајтот.'
+        }
+
+        $(document).ready(function () {
+            $('body').ihavecookies(options);
+
+            if ($.fn.ihavecookies.preference('marketing') === true) {
+                console.log('This should run because marketing is accepted.');
+            }
+
+            $('#ihavecookiesBtn').on('click', function () {
+                $('body').ihavecookies(options, 'reinit');
+            });
+        });
+    </script>
+</body>
+</html>

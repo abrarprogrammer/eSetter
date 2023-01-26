@@ -1,0 +1,926 @@
+﻿<div class="container" id="main_container">
+    <!-- header -->
+    @Html.Partial("_header")<!-- /header -->
+    <!-- #call-to-action -->
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <h1>Животот е <span>комуникација</span>... започни веднаш!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#call-to-action -->
+    <!-- #call-to-action-form -->
+    <section id="call-to-action-form">
+        <div class="container">
+            <div class="row clearfix">
+                <!-- .slider-wrapper -->
+                <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 phone phoneType text-center">
+                    <img src="~/Images/phone.png" />
+                    <div id="targetOne">
+                        <h2 id="target"></h2>
+                        <h2 id="target2"></h2>
+                    </div>
+                </div>
+                <!-- /.slider-wrapper -->
+                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+                    <!-- .form-subscribe -->
+                    <div class="form-subscribe">
+                        <h4>Најави се</h4>
+                        <div id="message"></div>
+                        <div id="login_form" class="formInputs">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                                    <label data-toggle="tooltip" data-placement="top" title="пример: 123456@070">Телефонски број:</label>
+                                    <div class="row" style="margin:0 !important; padding:0 !important;">
+                                        <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7" style="padding:0 !important">
+                                            <input type="text" tabindex="1" class="form-control numbers" maxlength="6" placeholder="xxxxxx" autofocus id="user" autocomplete="new-password" name="user">
+                                        </div>
+                                        <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5" style="padding:0 !important">
+                                            <label class="sr-only" for="prefix">Username</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">&commat;</div>
+                                                </div>
+                                                <select class="form-control" id="prefix">
+                                                    <option value="070">070</option>
+                                                    <option value="071">071</option>
+                                                    <option value="072">072</option>
+                                                    <option value="073">073</option>
+                                                    <option value="074">074</option>
+                                                    <option value="075">075</option>
+                                                    <option value="076">076</option>
+                                                    <option value="077">077</option>
+                                                    <option value="078">078</option>
+                                                    <option value="079">079</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <label>Лозинка:</label>
+                                    <input type="password" tabindex="2" class="form-control" placeholder="Внесете ја вашата лозинка" id="pass" readonly  onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
+    // fix for mobile safari to show virtual keyboard
+    this.blur();    this.focus();  }" name="pass">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="signInLd">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="div-center col-sm-12">
+                                    <button tabindex="3" id="signIn" data-toggle="popoverSignIn" data-content="Some content inside the popover" type="submit" name="login" class="btn btn-custom"><i class="fa fa-envelope"></i> Најави се</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#changePass" class="registriraj">Промени лозинка</a></p>
+                    </div>
+                    <!-- /.form-subscribe -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#call-to-action-form -->
+    <!-- #features -->
+    <section id="features">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <!-- .panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><img src="~/Images/wondering.png" height="40"> Што е СЕТТЕР?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <strong style="font-size:16px;">С</strong>воја електронска адреса со<br style="content: '';margin: 2em;display: block;margin-bottom: -20px;">
+                            <strong style="font-size:16px;">Е</strong>динствена сметка како Вашиот телефонски број.<br style="content: '';margin: 2em;display: block;margin-bottom: -20px;">
+                            <strong style="font-size:16px;">Т</strong>и си препознатлив и<br style="content: '';margin: 2em;display: block;margin-bottom: -20px;">
+                            <strong style="font-size:16px;">Т</strong>ренди со домен како и Вашиот префикс.<br style="content: '';margin: 2em;display: block;margin-bottom: -20px;">
+                            <strong style="font-size:16px;">Е</strong>дноставен за паметење и<br style="content: '';margin: 2em;display: block;margin-bottom: -20px;">
+                            <strong style="font-size:16px;">Р</strong>ационален во комуникација
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <!-- .panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><img src="~/Images/why.png" height="40"> Зошто e-СЕТТЕР?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Телефонски број = електронска адреса = корисник</li>
+                                <li> Сите меморирани телефонски броеви  (автоматски ги знаете и нивните електронски адреси)</li>
+                                <li> Телефонските броевите се полесни за комуникација и паметење</li>
+                                <li> Брза, лесна и едноставна електронска комуникација</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <!-- .panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><img src="~/Images/hand-holding-a-cellphone-svgrepo-com.svg" height="40"> Лесна активација</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Испратете СМС порака со содржина START на 149444</li>
+                                <li>Ќе добиете повратна СМС порака дека Ви е крерирана електронската адреса, останува уште да ја конфирмирате на сајтот со привремената лозинка што ја добивте</li>
+                                <li>Важи за операторите: <br style="content: '';margin: 2em;display: block;margin-bottom: -20px;"><img src="../../Images/tmmk.png" height="20">&nbsp;&nbsp;<img src="../../Images/a1.png" height="30">&nbsp;&nbsp;<img src="../../Images/mtel.png" height="30">
+</ul>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#features -->
+    <!-- #faqs-screenshots -->
+    <section id="faqs-screenshots">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <!-- .faq-cat-tabs -->
+                    <ul class="nav nav-tabs faq-cat-tabs">
+                        <li class="active"><a href="#faq-cat-1" data-toggle="tab"><i class="fa fa-question-circle"></i> Зошто e-СЕТТЕР?</a></li>
+                        <li><a href="#faq-cat-2" data-toggle="tab"><i class="fa fa-question-circle"></i> Како да се регистрирам?</a></li>
+                    </ul>
+                    <!-- /.faq-cat-tabs -->
+                    <!-- .faq-cat-content -->
+                    <div class="tab-content faq-cat-content">
+                        <!-- #faq-cat-1 -->
+                        <div class="tab-pane active in fade" id="faq-cat-1">
+                            <div class="panel-group" id="accordion-cat-1">
+                                <!-- .panel-faq -->
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading active-faq">
+                                        <a class="" data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
+                                            <h4 class="panel-title"> Едноставна електронска комуникација <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span> </h4>
+                                        </a>
+                                    </div>
+                                    <div style="height: auto;" id="faq-cat-1-sub-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            Брза, лесна и едноставна електронска комуникација, без непотребни прашања од типот:<br>
+                                            Која е вашата електронска адреса?<br>
+                                            Со 'SH'?<br>
+                                            Со 'V' или без 'V'?<br>
+                                            Со '.' или без '.'?
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-faq -->
+                                <!-- .panel-faq -->
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2">
+                                            <h4 class="panel-title">
+                                                Телефонски број = електронска адреса = корисник
+                                                <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div style="height: 0px;" id="faq-cat-1-sub-2" class="panel-collapse collapse">
+                                        <div class="panel-body"> Телефонскиот број е идентичен како и електронската адреса. За секој од Вашите пријатели...</div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-faq -->
+                            </div>
+                        </div>
+                        <!-- /#faq-cat-1 -->
+                        <!-- #faq-cat-2 -->
+                        <div class="tab-pane fade" id="faq-cat-2">
+                            <div class="panel-group" id="accordion-cat-2">
+                                <!-- .panel-faq -->
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading active-faq">
+                                        <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-1">
+                                            <h4 class="panel-title"> Испрати СМС на 149444 <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span> </h4>
+                                        </a>
+                                    </div>
+                                    <div id="faq-cat-2-sub-1" class="panel-collapse collapse in">
+                                        <div class="panel-body"> Испратете СМС порака од Вашиот телефонски број со содржина START на 149444</div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-faq -->
+                                <!-- .panel-faq -->
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-2">
+                                            <h4 class="panel-title"> Добијте потврда<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span> </h4>
+                                        </a>
+                                    </div>
+                                    <div id="faq-cat-2-sub-2" class="panel-collapse collapse">
+                                        <div class="panel-body"> Ќе добиете повратна СМС порака дека Вашата електронска адреса (тел._број@префикс.mk) е активна.</div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-faq -->
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-3">
+                                            <h4 class="panel-title"> Комфирмирајте<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span> </h4>
+                                        </a>
+                                    </div>
+                                    <div id="faq-cat-2-sub-3" class="panel-collapse collapse">
+                                        <div class="panel-body"> Откако ќе добиете привремена лозинка. Треба да се најавете на сајтот и со тоа вашата електронска адреса станува активна.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /#faq-cat-2 -->
+                    </div>
+                    <!-- /.faq-cat-content -->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 screenshots">
+                    @*
+                        <h2>Screenshots</h2>
+                    
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="../../Images/1_003.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 1" src="../../Images/1_003.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="../../Images/2_003.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 2" src="../../Images/2_003.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/3.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 3" src="../../Images/3.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/4.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 4" src="../../Images/4.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/5.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 5" src="../../Images/5.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/6.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 6" src="../../Images/6.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/7.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 7" src="../../Images/7.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/8.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 8" src="../../Images/8.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/9.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 9" src="../../Images/9.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/10.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 10" src="../../Images/10.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/11.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 11" src="../../Images/11.jpg"> </a> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 img-screenshots"> <a data-lightbox="roadtrip" class="imgHover prettyPhoto" href="http://damterthemes.com/theme/elite/1.0/assets/img/screenshots/large/12.jpg"> <img class="img-responsive img-thumbnail" alt="Screenshot 12" src="../../Images/12.jpg"> </a> </div>
+                *@
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  <img class="img-responsive" alt="Screenshot 12" src="../../Images/main.png"> </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#faqs-screenshots -->
+    <!-- #purchase -->
+    <section id="purchase">
+        <div class="container">
+            <div class="col-lg-12">
+                <img src="~/Images/picture.png" style="max-width:100%;border-radius:4px;" />
+                @*
+                    <div class="div-center">
+                       <h2 id="imp">Луѓето не се бројки, но бројките ќе ја олеснат <strong>Вашата комуникација!</strong></h2>
+                    </div>
+                *@
+            </div>
+        </div>
+    </section>
+    <!-- /#purchase -->
+    <!-- #toTop -->
+    <div style="display: none;z-index:2" id="toTop">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- /#toTop -->
+    <!-- footer -->
+    @Html.Partial("_footer")
+    <!-- /footer -->
+</div>
+<!-- /#main_container -->
+<div class="modal fade container-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form class="formInputs">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>Име:</label>
+                            <input type="text" tabindex="2" class="form-control" autocomplete="off" placeholder="Име" id="txtname" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>Презиме:</label>
+                            <input type="text" tabindex="2" class="form-control" autocomplete="off" placeholder="Презиме" id="txtlastName" name="lastName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>Пол:</label>
+                            <select class="form-control" id="sex">
+                                <option value="0">-- Избери --</option>
+                                <option value="М">Машки</option>
+                                <option value="Ж">Женски</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>Година на раѓање:<span data-original-title="Tooltip on right" class="spanTooltip" data-toggle="tooltip" data-placement="top">*</span></label>
+                            <input type="text" class="form-control" id="birthDate" name="birthDate" placeholder="дд/мм/гггг">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="acceptRules">
+                        <label class="form-check-label">Се согласувам со <a class="condition">правата</a> и <a class="condition">условите</a> на e-Setter.mk?</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closeMdl" data-dismiss="modal">Откажи</button>
+                    <button type="button" class="btn btn-primary btn-custom" id="btnUpdate">Продолжи</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade container-modal" id="changePass" tabindex="-1" role="dialog" aria-labelledby="changePassModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-header">
+            <h5 class="modal-title">Промена на лозинка</h5>
+        </div>
+        <div class="modal-content formInputs">
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Внесете го вашиот број:</label>
+                        <div class="row" style="margin:0 !important;padding:0 !important;">
+                            <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7" style="padding:0 !important">
+                                <input type="text" tabindex="1" class="form-control numbers" maxlength="6" placeholder="xxxxxx" autocomplete="off" value="" autofocus id="username" name="user">
+                            </div>
+                            <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5" style="padding:0 !important">
+                                <label class="sr-only" for="prefix">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">&commat;</div>
+                                    </div>
+                                    <select class="form-control" id="prefixChange">
+                                        <option value="070">070</option>
+                                        <option value="071">071</option>
+                                        <option value="072">072</option>
+                                        <option value="073">073</option>
+                                        <option value="074">074</option>
+                                        <option value="075">075</option>
+                                        <option value="076">076</option>
+                                        <option value="077">077</option>
+                                        <option value="078">078</option>
+                                        <option value="079">079</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Внесете ја старата лозинка:</label>
+                        <input type="password" tabindex="2" class="form-control" readonly="readonly" onfocus="this.removeAttribute('readonly');" autocomplete="off" placeholder="Стара лозинка" id="oldPass" name="oldPass">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Внесете ја новата лозинка:</label>
+                        <input type="password" tabindex="2" data-toggle="popoverNewPass" readonly="readonly" onfocus="this.removeAttribute('readonly');" autocomplete="off" data-content="Some content inside the popover" class="form-control" placeholder="Нова лозинка" id="newPass" name="newPass">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Повторете ја новата лозинка:</label>
+                        <input type="password" tabindex="2" class="form-control" readonly="readonly" onfocus="this.removeAttribute('readonly');" autocomplete="off" placeholder="Повторете ја новата лозинка" id="repeatNewPass" name="repeatNewPass">
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="modal-footer">
+                <div class="cngPasCls">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button type="button" class="btn btn-secondary closeMdl" data-dismiss="modal" id="clsCngPas">Откажи</button>
+                <button type="button" class="btn btn-primary btn-custom" data-toggle="popoverCngPass" data-content="Some content inside the popover" id="cngPass">Промени</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="policyModal" role="dialog" aria-labelledby="policyModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                @Html.Partial("_policy")
+            </div>
+            <div style="clear:both"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary continue btn-custom">Прифаќам</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="formDev"></div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#txtname").css("font-family", "Mac C Times");
+            $("#txtlastName").css("font-family", "Mac C Times");
+
+
+            $(document).keypress(function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == '13') {
+                    $("#signIn").trigger('click');
+                }
+            });
+            var i = 0;
+            var m = 0;
+            var txt = '149444';
+            var txt2 = 'START';
+            var l = txt2.length;
+            var p = txt.length;
+            var speed = 50;
+            var equal = true;
+            typeWriter();
+            var data;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("target").innerHTML += '|';
+                    var el = document.getElementById("target").innerHTML;
+                    setTimeout(function () {
+                        document.getElementById("target").innerHTML = el.substring(0, el.length - 1);
+                        document.getElementById("target").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }, 150);
+
+                } else {
+                    if (m < txt2.length) {
+                        document.getElementById("target2").innerHTML += '|';
+                        var el = document.getElementById("target2").innerHTML;
+                        setTimeout(function () {
+                            document.getElementById("target2").innerHTML = el.substring(0, el.length - 1);
+                            document.getElementById("target2").innerHTML += txt2.charAt(m);
+                            m++;
+                            setTimeout(typeWriter, speed);
+                        }, 150);
+                    } else {
+                        if (l === txt2.length && equal) {
+                            document.getElementById("target2").innerHTML += '|';
+                            equal = false;
+                            var myVar = setInterval(function () {
+                                document.getElementById("target2").innerHTML.substring(l, l + 1) === '|' ? document.getElementById("target2").innerHTML = document.getElementById("target2").innerHTML.substring(0, l) + ' ' : document.getElementById("target2").innerHTML = document.getElementById("target2").innerHTML = document.getElementById("target2").innerHTML.substring(0, l) + '|'
+                            }, 130);
+                            setTimeout(function () {
+                                clearInterval(myVar);
+                                document.getElementById("target2").innerHTML = document.getElementById("target2").innerHTML.substring(0, l - 1);
+                                typeWriter();
+                            }, 2000);
+                        } else {
+                            if (l > 0) {
+                                document.getElementById("target2").innerHTML += '|';
+                                var el = document.getElementById("target2").innerHTML;
+                                setTimeout(function () {
+                                    document.getElementById("target2").innerHTML = el.substring(0, l - 2);
+                                    l--;
+                                    setTimeout(typeWriter, speed);
+                                }, 150);
+                            } else {
+                                if (p > 0) {
+                                    document.getElementById("target").innerHTML += '|';
+                                    var el = document.getElementById("target").innerHTML;
+                                    setTimeout(function () {
+                                        document.getElementById("target").innerHTML = el.substring(0, p - 2);
+                                        p--;
+                                        setTimeout(typeWriter, speed);
+                                    }, 150);
+                                } else {
+                                    i = 0;
+                                    m = 0;
+                                    l = txt2.length;
+                                    p = txt.length;
+                                    equal = true;
+                                    setTimeout(typeWriter, speed);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //$.ajax({
+            //        url: "api/eSetter",
+            //        type: 'POST',
+            //    }).done(function (data) {
+            //        alert(JSON.stringify(data));
+            //        });
+
+            var pom;
+            $('[data-toggle="popoverSignIn"]').popover({
+
+                template: "<div class='popover fade bottom redBck' role='tooltip'><div class='popover-body errorResponse'></div></div>",
+                placement: 'bottom',
+                trigger: "manual"
+            });
+
+
+
+            $('[data-toggle="popoverCngPass"]').popover({
+
+                template: "<div class='popover fade bottom errorBckCng' role='tooltip'><div class='popover-body errorResponseCngPass'></div></div>",
+                placement: 'bottom',
+                trigger: "manual"
+            });
+
+            $('[data-toggle="popoverNewPass"]').popover({
+                template: "<div class='popover fade right'><p id='passLength' class='row errorText'>Лозинката мора да содржи најмалку 8 карактери</p><p id='passUpper' class='row errorText'>Лозинката мора да содржи најмалку 1 голема буква</p><p id='passSpec' class='row errorText'>Лозинката мора да содржи најмалку 1 специјален карактер</p></div> ",
+                placement: 'top'
+            });
+            var timer = null;
+            //var domain = $(location).attr('hostname').replace('www', '').replace('.mk', '');
+            //if (domain != 'e-setter' && domain!= 'localhost') {
+            //$("#prefixReset").val(domain);
+            //$("#prefixChange").val(domain);
+            //    $("#prefix").val(domain);
+            //    $("#prefixReset").prop("disabled", true);
+            //    $("#prefixChange").prop("disabled", true);
+            //    $("#prefix").prop("disabled", true);
+            //}
+            var dt = new Date();
+            dt.setMonth(dt.getMonth() - (12 * 18));
+            $("a.prettyPhoto").prettyPhoto();
+            $('.numbers').keypress(validateNumber);
+            $('#repeatNewPass').keyup(function () {
+                var newPass = $('#newPass').val();
+                var newval = $('#repeatNewPass').val()
+                if (newval === newPass && newPass !== '' && newPass !== null && newPass !== undefined) {
+                    $('#repeatNewPass').removeClass("error");
+                    $('#repeatNewPass').addClass("validated");
+                } else {
+                    if (!$('#repeatNewPass').hasClass("error")) {
+                        $('#repeatNewPass').addClass("error");
+                        $('#repeatNewPass').removeClass("validated");
+                    }
+                }
+            });
+            $('#newPass').focus(function () {
+                $('.popover').css("z-index", "");
+                var val = $('#newPass').val();
+                var clLength = 'errorText';
+                var clUpper = 'errorText';
+                var clSpec = 'errorText';
+                var isValid = false;
+                if (val.length >= 8) {
+                    clLength = "validatedText";
+                }
+                if (/^[a-zA-Z0-9- ]*$/.test(val) == false) {
+                    clSpec = "validatedText";
+                }
+                for (i = 0; i < val.length; i++) {
+                    if (isItUpper(val.charAt(i))) {
+                        isValid = true;
+                    }
+                }
+                if (isValid) {
+                    clUpper = "validatedText";
+                }
+                var popover = $('[data-toggle="popoverNewPass"]').data('bs.popover');
+                if (!popover.tip().is(':visible')) {
+                    $('[data-toggle="popoverNewPass"]').popover('show');
+                }
+                $('[data-toggle="popoverNewPass"]').popover('show');
+                $("#passLength").removeClass("errorText").removeClass("validatedText").addClass(clLength);
+                $("#passUpper").removeClass("errorText").removeClass("validatedText").addClass(clUpper);
+                $("#passSpec").removeClass("errorText").removeClass("validatedText").addClass(clSpec);
+                $('.popover').css("z-index", "1001");
+
+            });
+            $('#newPass').keyup(function () {
+                var val = $('#newPass').val();
+                var isValid = false;
+                var clLength = 'errorText';
+                var clUpper = 'errorText';
+                var clSpec = 'errorText';
+                if (val.length >= 8) {
+                    clLength = "validatedText";
+                } else {
+                    clLength = "errorText";
+                }
+                if (/^[a-zA-Z0-9- ]*$/.test(val) == false) {
+                    clSpec = "validatedText";
+                } else {
+                    clSpec = "errorText";
+                }
+                for (i = 0; i < val.length; i++) {
+                    if (isItUpper(val.charAt(i))) {
+                        isValid = true;
+                    }
+                }
+                if (isValid) {
+                    clUpper = "validatedText";
+                } else {
+                    clUpper = "errorText";
+                }
+                var popover = $('[data-toggle="popoverNewPass"]').data('bs.popover');
+                if (!popover.tip().is(':visible')) {
+                    $('[data-toggle="popoverNewPass"]').popover('show');
+                }
+                $("#passLength").removeClass("errorText").removeClass("validatedText").addClass(clLength);
+                $("#passUpper").removeClass("errorText").removeClass("validatedText").addClass(clUpper);
+                $("#passSpec").removeClass("errorText").removeClass("validatedText").addClass(clSpec);
+            });
+
+            $('#newPass').focusout(function () {
+                $('[data-toggle="popoverNewPass"]').popover('hide');
+
+                $('.popover').css("z-index", "-9999");
+            });
+            $("#birthDateReset").datepicker({
+                language: 'mk',
+                startDate: '01/01/1920',
+                endDate: dt,
+                autoHide: true
+            }).on('changeDate', function () {
+                $(this).datepicker('hide');
+            });
+            $("#birthDate").datepicker({
+                language: 'mk',
+                startDate: '01/01/1920',
+                endDate: dt
+            }).on('changeDate', function () {
+                $(this).datepicker('hide');
+            });
+            $('#birthDateReset').keypress(function (e) {
+                e.preventDefault();
+            });
+            $('#birthDate').keypress(function (e) {
+                e.preventDefault();
+            });
+
+            $("input").focus(function () {
+                $(this).removeClass("error");
+            });
+            $('#changePass').on('shown.bs.modal', function () {
+                $('#username').trigger('focus')
+            });
+            $('#resetPass').on('shown.bs.modal', function () {
+                $('#userMail').trigger('focus')
+            });
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            $("#signIn").on("click", function () {
+                $(".popover").css("z-index", "");
+                if (timer != null) {
+                    clearTimeout(timer);
+                    $('[data-toggle="popoverSignIn"]').popover('hide');
+                    timer = null;
+                }
+                var usr = $("#user").val();
+                var pas = $("#pass").val();
+                var valid = true;
+                if (usr === null || usr === '' || usr === undefined) {
+                    $("#user").addClass("error");
+                    valid = false;
+                }
+                if (pas === null || pas === '' || pas === undefined) {
+                    $("#pass").addClass("error");
+                    valid = false;
+                }
+
+                if (valid) {
+                    $(this).css("visibility", "hidden");
+                    $(".signInLd").addClass("loaderLogin");
+                    var subscriber = {
+                        username: usr,
+                        password: pas,
+                        prefix: $("#prefix").val()
+                    };
+                    $.post('../api/eSetter/checkAccount', subscriber)
+                        .done(function (data) {
+                            $('#formDev').html(data.data);
+
+                            document.forms['redirectForm'].submit();
+                        })
+                        .fail(function (xhr, status, error) {
+
+                            $(".signInLd").removeClass("loaderLogin");
+                            $("#signIn").css("visibility", "");
+                            if (xhr.status == 404) {
+                                $("#pass").addClass("error");
+                                $("#user").addClass("error");
+                                $(".registriraj").css("visibility", "hidden");
+                                $('[data-toggle="popoverSignIn"]').popover('toggle');
+                                $(".errorResponse").html(xhr.responseJSON);
+                                timer = setTimeout(function () {
+                                    $('[data-toggle="popoverSignIn"]').popover('hide');
+                                    timer = null;
+                                    $(".registriraj").css("visibility", "");
+                                    $(".popover").css("z-index", "-9999");
+                                }, 3500);
+                            }
+                            if (xhr.status == 406) {
+                                $("#exampleModal").modal('show');
+                            }
+                        });
+                }
+            });
+            $(".condition").on("click", function () {
+                $("#policyModal").modal({
+                    keyboard: false,
+                    backdrop: "static"
+                });
+            });
+            $(".closeMdl").on("click", function () {
+                if (timer != null) {
+                    clearTimeout(timer);
+                    $('[data-toggle="popoverSignIn"]').popover('hide');
+                    $('[data-toggle="popoverNewPass"]').popover('hide');
+                    $('[data-toggle="popoverCngPass"]').popover('hide');
+                    timer = null;
+                }
+                $(".popover .row").removeClass("errorText").removeClass("validatedText").addClass("errorText");
+                $("#userMail").removeClass("error");
+                $("#userMail").val('');
+                $("#prefixReset").val('070');
+                $("#birthDateReset").removeClass("error");
+                $("#birthDateReset").val('');
+                $("#birthDate").removeClass("error");
+                $("#birthDate").val('');
+                $("#sex").val('');
+                $("#txtname").val('');
+                $("#txtlastName").val('');
+                $("#repeatNewPass").removeClass("error").removeClass("validated");
+                $("#repeatNewPass").val('');
+                $("#newPass").removeClass("error");
+                $("#newPass").val('');
+                $("#oldPass").removeClass("error");
+                $("#oldPass").val('');
+                $("#username").removeClass("error");
+                $("#username").val('');
+                $("#prefixChange").val('070');
+                $("#birthDate").removeClass("error");
+                $("#birthDate").val('');
+                $("#sex").val('0');
+                $("#lastName").val('');
+                $("#name").val('');
+                $("#acceptRules").removeAttr("checked");
+            });
+            $(".continue").on("click", function () {
+                $("#acceptRules").prop("checked", "true");
+                $("#policyModal").modal('hide');
+            });
+            $("#btnUpdate").on("click", function () {
+                if (!$("#acceptRules").is(':checked')) {
+
+                    return;
+                }
+                var brth = $("#birthDate").val();
+                var valid = true;
+                if (brth === null || brth === '' || brth === undefined) {
+                    $("#birthDate").addClass("error");
+                    valid = false;
+                }
+
+                if (valid) {
+
+                    var subscriber = {
+                        birthDate: brth,
+                        sex: $("#sex").val(),
+                        name: $("#txtname").val(),
+                        lastName: $("#txtlastName").val(),
+                        consent: $("#acceptRules").is(':checked'),
+                        prefix: $("#prefix").val(),
+                        username: $("#user").val(),
+                        password: $("#pass").val()
+                    }
+                    $.post('../api/eSetter/updateUser', subscriber)
+                        .done(function (data) {
+                            $('#formDev').html(data.data);
+
+                            document.forms['redirectForm'].submit();
+                        })
+                        .fail(function (xhr, status, error) {
+                            if (xhr.status == 404) {
+                                alert("грешка");
+                            }
+                        });
+                }
+
+
+
+            });
+
+            $("#cngPass").on("click", function () {
+                var valid = true;
+                $("#oldPass").removeClass("error");
+                $("#username").removeClass("error");
+                $('.popover').css("z-index", "");
+                var usr = $("#username").val();
+                var newpas = $("#newPass").val();
+                var oldpass = $("#oldPass").val();
+                var repeatNewPass = $("#repeatNewPass").val();
+                if (usr === null || usr === '' || usr === undefined) {
+                    $("#username").addClass("error");
+                    valid = false;
+                }
+                if (oldpass === null || oldpass === '' || oldpass === undefined) {
+                    $("#oldPass").addClass("error");
+                    valid = false;
+                }
+                if (newpas === null || newpas === '' || newpas === undefined) {
+                    $("#newPass").addClass("error");
+                    valid = false;
+                }
+                if (repeatNewPass === null || repeatNewPass === '' || repeatNewPass === undefined || repeatNewPass !== newpas) {
+                    $("#repeatNewPass").addClass("error");
+                    valid = false;
+                }
+                if (valid) {
+                    $("#cngPass").css("visibility", "hidden");
+                    $("#clsCngPas").css("visibility", "hidden");
+                    $(".cngPasCls").addClass("loader");
+                    var subscriber = {
+                        username: usr,
+                        password: newpas,
+                        oldPass: oldpass,
+                        prefix: $("#prefixChange").val()
+                    };
+                    $.ajax({
+                        url: "../api/eSetter/resetPassword",
+                        type: 'POST',
+                        dataType: "json",
+                        data: subscriber,
+                    }).done(function (data) {
+                        $("#cngPass").css("visibility", "");
+                        $("#clsCngPas").css("visibility", "");
+                        $(".cngPasCls").removeClass("loader");
+                        $('[data-toggle="popoverCngPass"]').popover('show');
+                        $(".errorResponseCngPass").html(data);
+
+                        $(".popover").css("z-index", "999");
+                        $(".errorBckCng").removeClass("errorBckCng").addClass("successBckCng");
+                        timer = setTimeout(function () {
+                            $('[data-toggle="popoverCngPass"]').popover('hide');
+                            timer = null;
+                            $(".popover").css("z-index", "-9999");
+                            $(".closeMdl").trigger("click");
+                        }, 3500);
+
+                    }).fail(function (xhr, status, error) {
+                        $("#cngPass").css("visibility", "");
+                        $("#clsCngPas").css("visibility", "");
+                        $(".cngPasCls").removeClass("loader");
+                        $(".popover").css("z-index", "999");
+                        if (xhr.status == 404) {
+                            $("#username").addClass("error");
+                            $("#oldPass").addClass("error");
+                            $("#oldPass").val("");
+                            $('[data-toggle="popoverCngPass"]').popover('show');
+                            $(".errorResponseCngPass").html(xhr.responseJSON);
+                            $(".successBckCng").removeClass("successBckCng").addClass("errorBckCng");
+                            timer = setTimeout(function () {
+                                $('[data-toggle="popoverCngPass"]').popover('hide');
+                                timer = null;
+                                $(".popover").css("z-index", "-9999")
+                            }, 3500);
+                        }
+                    });
+                }
+                /* $.ajax({
+                     url: "api/eSetter/resetPassword",
+                     type: 'PUT',
+                 }).done(function (data) {
+                     alert(JSON.stringify(data));
+                     });
+                 */
+            });
+        })
+
+        function isItUpper(string) {
+            return (string === string.toUpperCase()) && (string !== string.toLowerCase());
+        }
+
+        function validateNumber(event) {
+            var key = window.event ? event.keyCode : event.which;
+            if (event.keyCode === 8 || event.keyCode === 46) {
+                return true;
+            } else if (key < 48 || key > 57) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+}

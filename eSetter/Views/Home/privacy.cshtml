@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "privacy";
+}
+
+    <div class="container" id="main_container">
+        <!-- header -->
+        @Html.Partial("_header")
+        <section id="policy">
+            <div class="container">
+                <div class="row clearfix">
+                    @Html.Partial("_policy")
+                </div>
+            </div>
+        </section>
+        <div style="display: none;z-index:2" id="toTop">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        @Html.Partial("_footer")
+    </div>
+
